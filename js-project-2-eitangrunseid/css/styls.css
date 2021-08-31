@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(57, 59, 59);
+}
+
+.container {
+	width: 883px;
+	margin: auto;
+}
+
+.header {
+	color: rgb(164, 164, 252);
+}
+.spinner-container {
+	display: flex;
+	color: white;
+}
+
+.search-btn {
+	color: bisque;
+}
+
+.input-group {
+	width: 100%;
+}
+#search-input {
+	background: none;
+	border: 2px solid grey;
+	color: rgb(164, 164, 252);
+}
+
+.search-img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.container-holder {
+	width: 100%;
+}
+
+.img-holder {
+	display: flex;
+}
+
+.list-group-item {
+	border: none;
+}
+
+.list-group-flush>.list-group-item {
+	background: none;
+}
+
+.item-search-container {
+	display: flex;
+	width: 550px;
+	justify-content: space-between;
+}
+.item-search-container :hover {
+	background-color: rgb(208, 221, 221);
+	background: none;
+}
+.stock-price {
+	font-weight: bold;
+}
+
+#results {
+	display: flex;
+	justify-content: center;
+}
+
+.link-item {
+	color: rgb(164, 164, 252);
+	margin: 0 20px;
+	text-decoration: none;
+}
+.link-item :hover {
+	color: lightskyblue;
+}
+.header-container {
+	justify-content: center;
+	background:none;
+}
+
+.marquee-display {
+	color: rgb(164, 164, 252);
+	background: none;
+}
+
+.marqPrice {
+	color: rgb(129, 209, 129);
+}
+
+.marquee-parent {
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+	left: 340px;
+	background:none;
+	width: 54%;
+}
+
+.marquee-parent p {
+	position: absolute;
+	width: 500vw;
+	height: 10%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
+	-webkit-animation: scroll-left 2s linear infinite;
+	animation: scroll-left 80s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes scroll-left {
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(30%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
